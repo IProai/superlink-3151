@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+		<meta name="theme-color" content="#08ABCC" />
+		<link rel="icon" href="/favicon.ico" />
+		<title>Super Link Stationary Trading — Office & School Supplies for UAE Business</title>
+		<meta name="description" content="B2B stationery for UAE offices, schools and institutions. Search, quick order by SKU, request a quote. Super Link Stationary Trading LLC, Dubai – Abu Dhabi." />
+		<meta property="og:title" content="Super Link Stationary Trading LLC" />
+		<meta property="og:image" content="/og-image.png" />
+		<script>
+			// Set locale before first paint to avoid an LTR→RTL flash (CLS).
+			(function () {
+				try {
+					var q = new URLSearchParams(location.search).get("lang");
+					var l = q === "ar" || q === "en" ? q : localStorage.getItem("slst.locale");
+					if (l === "ar") { document.documentElement.lang = "ar"; document.documentElement.dir = "rtl"; }
+				} catch (e) {}
+			})();
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="preload" as="image" href="/images/hero-poster.jpg" media="(min-width: 768px)" fetchpriority="high" />
+		<link rel="preload" as="image" href="/images/hero-poster-sm.jpg" media="(max-width: 767.98px)" fetchpriority="high" />
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/web/main.tsx"></script>
+	</body>
+</html>
